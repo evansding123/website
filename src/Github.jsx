@@ -12,7 +12,7 @@ const Github = (props) => {
       url: 'https://api.github.com/users/evansding123/repos',
       headers: {
         'User-Agent': 'request',
-        Authorization: `${githubKey}`,
+        // Authorization: `${githubKey}`,
       }
     }
     const getRepo = async () => {
