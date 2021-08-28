@@ -8,6 +8,8 @@ import CardContent from '@material-ui/core/CardContent';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Link from '@material-ui/core/Link';
+import CardMedia from '@material-ui/core/CardMedia';
+import pixelRPG from './pics/pixelRPG.png';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,11 +22,15 @@ const useStyles = makeStyles((theme) => ({
 
     backgroundColor: 'grey',
     display: 'flex',
-    flexDirection: 'row'
+    flexDirection: 'row',
+    '& div': {
+      minWidth: 400,
+    }
   },
 
   card: {
-    minwidth: 275,
+    display: 'flex',
+    flexDirection: 'column',
     marginLeft: '5%',
     marginBottom: '5%',
     marginTop: '5%',
@@ -54,7 +60,14 @@ const Projects = (props) => {
       <Paper variant = 'outlined' className = {classes.paper}>
         <Card className = {classes.card}>
           <Typography align = 'left' variant = 'h5'>Pixel RPG</Typography>
-          <Link href = 'https://github.com/evansding123/PixelRPG'>https://github.com/evansding123/PixelRPG</Link>
+          <CardMedia
+          component="img"
+          alt="myRPG"
+          height="140"
+          image= {pixelRPG}
+          title="pixelRPG"
+        />
+          <Link align = 'left' href = 'https://github.com/evansding123/PixelRPG'>https://github.com/evansding123/PixelRPG</Link>
         </Card>
 
       </Paper>
