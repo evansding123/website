@@ -47,7 +47,7 @@ const Navbar = (props) => {
 
   return(
     <div className = {classes.root}>
-      <AppBar className = {classes.appbar} position = 'fixed'>
+      <AppBar className = {classes.appbar} position = 'sticky'>
         <Toolbar className = {classes.toolbar}>
           <Button>About</Button>
           <Button>Experience</Button>
